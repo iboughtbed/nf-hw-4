@@ -18,7 +18,7 @@ interface ProductItemProps {
 
 export function ProductItem({ product }: ProductItemProps) {
   return (
-    <Card className="size-full overflow-hidden rounded-lg">
+    <Card className="flex size-full flex-col overflow-hidden rounded-lg">
       <CardHeader className="p-0">
         <AspectRatio ratio={4 / 3}>
           <Image
@@ -30,7 +30,7 @@ export function ProductItem({ product }: ProductItemProps) {
           />
         </AspectRatio>
       </CardHeader>
-      <CardContent className="space-y-1.5 p-4">
+      <CardContent className="flex-1 space-y-1.5 p-4">
         <CardTitle>{product.title}</CardTitle>
         <CardDescription>{product.description}</CardDescription>
         <CardDescription className="line-clamp-1">
