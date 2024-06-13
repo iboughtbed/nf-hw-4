@@ -31,8 +31,11 @@ export type MainNavItem = NavItemWithOptionalChildren;
 
 export type SidebarNavItem = NavItemWithChildren;
 
-export type Task = {
+export type Product = {
   id: number;
-  text: string;
-  completed: boolean;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
 };

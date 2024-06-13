@@ -9,11 +9,19 @@ This is an open source todo app build with everything new in Next.js 14. It is b
 - **Framework:** [Next.js](https://nextjs.org)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com)
 - **UI Components:** [shadcn/ui](https://ui.shadcn.com)
-- **State management** [Jotai](https://jotai.org)
 
 ## Features to be implemented
 
-- [x] 
+NOTE: I'm just using a different name for my query files
+
+- [x] Fetch all products using React Query
+- [x] Create axios instance and service for handling requests related to '/products' (queries.ts and actions.ts)
+- [x] Implement product creation page
+
+- [x] Add file uploading to product creationg page
+- [x] Add invlidateQuery on product creation
+
+- [x] Add multiple files uploading
 
 ## Running Locally
 

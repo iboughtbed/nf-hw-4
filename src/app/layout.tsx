@@ -2,7 +2,8 @@ import "~/styles/globals.css";
 
 import type { Metadata, Viewport } from "next";
 
-import { ThemeProvider } from "~/components/providers";
+import { ReactQueryProvider, ThemeProvider } from "~/components/providers";
+import { Toaster as Sonner } from "~/components/ui/sonner";
 import { siteConfig } from "~/config/site";
 import { fontMono, fontSans } from "~/lib/fonts";
 import { cn } from "~/lib/utils";
@@ -71,15 +72,17 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontMono.variable,
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {/* rollback */}
-          <div vaul-drawer-wrapper="">{children}</div>
-        </ThemeProvider>
+        <ReactQueryProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <div vaul-drawer-wrapper="">{children}</div>
+            <Sonner richColors />
+          </ThemeProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   );

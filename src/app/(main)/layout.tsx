@@ -7,7 +7,7 @@ interface MainLayoutProps {
 
 export default async function MainLayout({ children }: MainLayoutProps) {
   return (
-    <div className="relative flex flex-col">
+    <div className="relative flex min-h-screen flex-col">
       <SiteHeader />
       <main className="relative flex-1">{children}</main>
       <SiteFooter />
