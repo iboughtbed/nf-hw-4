@@ -1,4 +1,3 @@
-import { useQueryClient } from "@tanstack/react-query";
 import { api, uploader } from "~/lib/api";
 
 export async function createProduct({
